@@ -96,7 +96,6 @@ export default function Work() {
         </div>
 
         <p style={{ textAlign:'center', fontFamily:'Inter,sans-serif', fontSize:'0.78rem', color:'rgba(255,255,255,0.25)', marginTop:'1rem' }}>
-          In collaboration with dydx Labs.
         </p>
       </section>
 

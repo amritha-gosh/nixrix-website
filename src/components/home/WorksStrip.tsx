@@ -75,7 +75,6 @@ export default function WorksStrip() {
             )}
           </div>
         ))}
-        <p style={{ color:'rgba(255,255,255,0.2)', fontFamily:'Inter,sans-serif', fontSize:'0.75rem', flexShrink:0, alignSelf:'center', paddingRight:'1rem' }}>In collaboration with dydx Labs.</p>
       </div>
     </section>
   )
