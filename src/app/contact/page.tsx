@@ -74,7 +74,7 @@ export default function Contact() {
       <canvas ref={canvasRef} style={{position:'fixed',inset:0,pointerEvents:'none',zIndex:0,opacity:0.5}}/>
 
       <section style={{position:'relative',zIndex:1,minHeight:'100vh',paddingTop:"110px",display:'flex',alignItems:'stretch'}}>
-        <div style={{maxWidth:'1300px',margin:'0 auto',width:'100%',display:'grid',gridTemplateColumns:'1fr 1fr',minHeight:'calc(100vh - 80px)'}}>
+        <div style={{maxWidth:'1300px',margin:'0 auto',width:'100%',display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',minHeight:'calc(100vh - 80px)'}}>
 
           {/* ── LEFT SIDE ── */}
           <div style={{background:'var(--dark)',padding:'5rem 4rem',display:'flex',flexDirection:'column',justifyContent:'center',position:'relative',overflow:'hidden'}}>
@@ -170,7 +170,7 @@ export default function Contact() {
                 </div>
 
                 <form onSubmit={submit} style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
-                  <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1rem'}}>
+                  <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',gap:'1rem'}}>
                     <div>
                       <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Your Name <span style={{color:'var(--red)'}}>*</span></label>
                       <input required name="name" placeholder="Jane Smith" value={form.name} onChange={handle}
