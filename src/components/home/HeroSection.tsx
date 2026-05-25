@@ -109,10 +109,10 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} style={{ position:'relative', minHeight:'100vh', display:'flex', alignItems:'center', overflow:'hidden', background:'#ffffff', willChange:'transform, opacity' }}>
+    <section ref={sectionRef} style={{ position:'relative', minHeight:'88vh', display:'flex', alignItems:'center', overflow:'hidden', background:'#ffffff', willChange:'transform, opacity' }}>
       <canvas ref={canvasRef} style={{ position:'absolute', inset:0, width:'100%', height:'100%', pointerEvents:'none' }}/>
       <div style={{ position:'absolute', left:0, top:0, bottom:0, width:'3px', background:'linear-gradient(to bottom,transparent,var(--red),transparent)', opacity:0.5 }}/>
-      <div style={{ position:'relative', zIndex:2, maxWidth:'1200px', margin:'0 auto', padding:'100px 1.5rem 3rem', width:'100%' }}>
+      <div style={{ position:'relative', zIndex:2, maxWidth:'1200px', margin:'0 auto', padding:'88px 1.5rem 2rem', width:'100%' }}>
         <div style={{ maxWidth:'640px' }}>
           <div style={{ display:'inline-flex', alignItems:'center', gap:'0.6rem', marginBottom:'1.5rem', padding:'0.45rem 1rem', border:'1px solid rgba(249,8,8,0.25)', color:'var(--red)', fontFamily:'Inter,sans-serif', fontSize:'0.72rem', letterSpacing:'0.16em', textTransform:'uppercase', background:'rgba(249,8,8,0.03)' }}>
             <span style={{ width:'6px', height:'6px', borderRadius:'50%', background:'var(--red)', display:'inline-block', animation:'pulse 2s infinite' }}/>

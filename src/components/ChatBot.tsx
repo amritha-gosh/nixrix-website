@@ -68,7 +68,9 @@ export default function ChatBot() {
       {open && (
         <div style={{ position: 'fixed', bottom: '6rem', left: '2rem', zIndex: 998, width: 'min(320px, calc(100vw - 4rem))', maxHeight: '460px', background: '#fff', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', display: 'flex', flexDirection: 'column', border: '2px solid var(--red)', borderRadius: '16px', overflow: 'hidden' }}>
           <div style={{ background: '#0d1b2a', padding: '1rem 1.2rem', display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
-            <div style={{ width: '36px', height: '36px', background: 'var(--red)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Sora,sans-serif', fontWeight: 700, fontSize: '1rem', color: 'white', flexShrink: 0 }}>N</div>
+            <div style={{ width: '36px', height: '36px', background: 'var(--red)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden', padding: '6px' }}>
+              <img src="/nixrix-icon.svg" alt="NIXRIX" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
+            </div>
             <div>
               <div style={{ fontFamily: 'Sora,sans-serif', fontWeight: 700, fontSize: '0.9rem', color: 'white' }}>NIXRIX Assistant</div>
               <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>

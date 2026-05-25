@@ -11,8 +11,8 @@ const cards = [
 export default function AboutStrip() {
   const [hovered, setHovered] = useState<number|null>(null)
   return (
-    <section style={{ background:'#fafaf8', padding:'4rem 1.5rem' }}>
-      <div style={{ maxWidth:'1200px', margin:'0 auto', display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:'3rem', alignItems:'center' }}>
+    <section style={{ background:'#fafaf8', padding:'2.5rem 1.5rem' }}>
+      <div style={{ maxWidth:'1200px', margin:'0 auto', display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:'1.5rem', alignItems:'center' }}>
         <div>
           <p style={{ fontFamily:'Inter', fontSize:'0.75rem', letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--red)', marginBottom:'0.8rem', fontWeight:500 }}>Who We Are</p>
           <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(1.6rem,4vw,2.8rem)', color:'#0d1b2a', letterSpacing:'-0.02em', marginBottom:'1.2rem', lineHeight:1.15 }}>

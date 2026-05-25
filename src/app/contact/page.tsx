@@ -73,7 +73,7 @@ export default function Contact() {
     <>
       <canvas ref={canvasRef} style={{position:'fixed',inset:0,pointerEvents:'none',zIndex:0,opacity:0.5}}/>
 
-      <section style={{position:'relative',zIndex:1,minHeight:'100vh',paddingTop:"110px",display:'flex',alignItems:'stretch'}}>
+      <section style={{position:'relative',zIndex:1,minHeight:'90vh',paddingTop:"110px",display:'flex',alignItems:'stretch'}}>
         <div style={{maxWidth:'1300px',margin:'0 auto',width:'100%',display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',minHeight:'calc(100vh - 80px)'}}>
 
           {/* ── LEFT SIDE ── */}
@@ -84,7 +84,7 @@ export default function Contact() {
             <div style={{position:'absolute',top:'-100px',left:'-100px',width:'400px',height:'400px',background:'radial-gradient(circle,rgba(249,8,8,0.08) 0%,transparent 70%)',pointerEvents:'none'}}/>
 
             {/* Logo with shine animation */}
-            <div style={{marginBottom:'3rem',position:'relative',display:'inline-block'}}
+            <div style={{marginBottom:'1.5rem',position:'relative',display:'inline-block'}}
               onMouseEnter={()=>setLogoHover(true)}
               onMouseLeave={()=>setLogoHover(false)}>
               <div style={{position:'relative',display:'inline-block',overflow:'hidden'}}>
@@ -104,12 +104,12 @@ export default function Contact() {
               Why spend time on tasks that can be automated? Tell us what is slowing your business down. We will tell you exactly what we would do about it — no jargon, no pressure, no obligation.
             </p>
 
-            <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'0.92rem',color:'#888',lineHeight:1.85,marginBottom:'2.5rem',maxWidth:'440px'}}>
+            <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'0.92rem',color:'#888',lineHeight:1.85,marginBottom:'1.2rem',maxWidth:'440px'}}>
               We work with businesses across the UK, US and UAE. Whether you need a website that actually converts, a CRM that works without manual input, or a dashboard that shows you what&apos;s really happening — we&apos;ll find the fastest way to get you there.
             </p>
 
             {/* Contact details */}
-            <div style={{display:'flex',flexDirection:'column',gap:'1rem',marginBottom:'2.5rem'}}>
+            <div style={{display:'flex',flexDirection:'column',gap:'1rem',marginBottom:'1.2rem'}}>
               {[
                 {icon:<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, text:'info@nixrix.com', href:'mailto:info@nixrix.com'},
                 {icon:<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011 1.18 2 2 0 013 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>, text:'+44 7492 712144', href:'tel:+447492712144'},
@@ -129,7 +129,7 @@ export default function Contact() {
             </div>
 
             {/* Social links */}
-            <div style={{display:'flex',gap:'0.8rem',marginBottom:'2.5rem'}}>
+            <div style={{display:'flex',gap:'0.8rem',marginBottom:'1.2rem'}}>
               {socials.map((s,i)=>(
                 <a key={i} href={s.href} target="_blank" rel="noopener noreferrer"
                   style={{width:'40px',height:'40px',border:'1px solid #2a2a1a',display:'flex',alignItems:'center',justifyContent:'center',color:'#666',transition:'all 0.2s',borderRadius:'0'}}
@@ -160,7 +160,7 @@ export default function Contact() {
               </div>
             ) : (
               <>
-                <div style={{marginBottom:'2.5rem'}}>
+                <div style={{marginBottom:'1.2rem'}}>
                   <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.6rem,3vw,2.2rem)',color:'#0d1b2a',letterSpacing:'-0.02em',marginBottom:'0.6rem'}}>
                     Start the conversation.
                   </h2>

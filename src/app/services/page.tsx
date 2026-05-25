@@ -194,7 +194,7 @@ export default function Services() {
   return (
     <>
       {/* Hero */}
-      <section style={{position:'relative',background:'#f8fafd',paddingTop:'140px',paddingBottom:'80px',overflow:'hidden',minHeight:'440px'}}>
+      <section style={{position:'relative',background:'#f8fafd',paddingTop:'96px',paddingBottom:'80px',overflow:'hidden',minHeight:'440px'}}>
         <NodeCanvas height={440} />
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>What We Offer</p>
@@ -233,14 +233,14 @@ export default function Services() {
 
       {/* Packages tab */}
       {tab==='packages' && (
-        <section style={{background:'#fafaf8',padding:'4rem 3rem 7rem'}}>
+        <section style={{background:'#fafaf8',padding:'2.5rem 1.5rem 3.5rem'}}>
           <div style={{maxWidth:'1300px',margin:'0 auto'}}>
-            <div style={{textAlign:'center',marginBottom:'3rem'}}>
+            <div style={{textAlign:'center',marginBottom:'1.5rem'}}>
               <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'0.6rem',fontWeight:500}}>Flexible Options</p>
               <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'#0d1b2a',letterSpacing:'-0.02em',marginBottom:'0.8rem'}}>Choose your package</h2>
               <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'1rem',color:'var(--muted)',maxWidth:'480px',margin:'0 auto',lineHeight:1.8}}>All packages are tailored to your business. Pricing discussed on your free discovery call.</p>
             </div>
-            <div style={{display:'flex',gap:'8px',flexWrap:'wrap',justifyContent:'center',marginBottom:'3rem'}}>
+            <div style={{display:'flex',gap:'8px',flexWrap:'wrap',justifyContent:'center',marginBottom:'1.5rem'}}>
               {pillars.map(p=>(
                 <button key={p.id} onClick={()=>setActivePillar(p.id)} style={{padding:'0.6rem 1.4rem',fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.82rem',background: activePillar===p.id ? 'var(--red)' : '#fff',color: activePillar===p.id ? 'white' : 'var(--muted)',border:`2px solid ${activePillar===p.id ? 'var(--red)' : '#ede9e3'}`,cursor:'pointer',transition:'all 0.2s',borderRadius:'50px'}}>
                   {p.label}
@@ -250,7 +250,7 @@ export default function Services() {
             <div id={`${activePillar}-packages`} style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',gap:'16px'}}>
               {currentPillar.packages.map((p,i)=><PackageCard key={`${activePillar}-${i}`} p={p}/>)}
             </div>
-            <div style={{marginTop:'4rem',background:'#0d1b2a',padding:'3rem',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:'2rem',borderRadius:'16px'}}>
+            <div style={{marginTop:'4rem',background:'#0d1b2a',padding:'3rem',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:'1rem',borderRadius:'16px'}}>
               <div>
                 <h3 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.3rem',color:'white',marginBottom:'0.5rem'}}>Not sure which package fits?</h3>
                 <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,color:'rgba(255,255,255,0.75)',fontSize:'0.9rem'}}>Book a free 30-minute call and we will recommend the right solution for your business.</p>

@@ -148,14 +148,14 @@ function WheelCard({ step }: { step: typeof steps[0] }) {
   }, [])
 
   return (
-    <div ref={ref} style={{ marginBottom:'2.5rem', perspective:'900px', perspectiveOrigin:'center bottom' }}>
+    <div ref={ref} style={{ marginBottom:'1.2rem', perspective:'900px', perspectiveOrigin:'center bottom' }}>
       <div style={{
         background:'var(--red)',
         borderRadius:'20px',
         padding:'2.8rem 3rem',
         display:'flex',
         alignItems:'center',
-        gap:'2.5rem',
+        gap:'1.2rem',
         transformOrigin:'bottom center',
         transform:`rotateX(${rx}deg)`,
         opacity,
@@ -235,7 +235,7 @@ function SineCanvas() {
 export default function HowWeWork() {
   return (
     <>
-      <section style={{position:'relative',background:'#fff',paddingTop:'140px',paddingBottom:'80px',overflow:'hidden',minHeight:'480px'}}>
+      <section style={{position:'relative',background:'#fff',paddingTop:'96px',paddingBottom:'80px',overflow:'hidden',minHeight:'360px'}}>
         <SineCanvas/>
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>Our Process</p>
@@ -248,16 +248,16 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section style={{background:'#fafaf8',padding:'5rem 3rem 10rem'}}>
+      <section style={{background:'#fafaf8',padding:'2.5rem 1.5rem 3.5rem'}}>
         <div style={{maxWidth:'860px',margin:'0 auto'}}>
-          <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.8rem',color:'var(--muted)',letterSpacing:'0.08em',textTransform:'uppercase',fontWeight:500,marginBottom:'3rem',textAlign:'center'}}>
+          <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.8rem',color:'var(--muted)',letterSpacing:'0.08em',textTransform:'uppercase',fontWeight:500,marginBottom:'1.5rem',textAlign:'center'}}>
             Scroll to explore each step ↓
           </p>
           {steps.map((s,i)=><WheelCard key={i} step={s}/>)}
         </div>
       </section>
 
-      <section style={{background:'#fff',padding:'4rem 3rem 7rem',textAlign:'center',borderTop:'1px solid #ede9e3'}}>
+      <section style={{background:'#fff',padding:'2.5rem 1.5rem 3.5rem',textAlign:'center',borderTop:'1px solid #ede9e3'}}>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
           <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'#0d1b2a',marginBottom:'1rem',letterSpacing:'-0.02em'}}>Ready to get started?</h2>
           <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',fontSize:'1rem',marginBottom:'2rem',lineHeight:1.8}}>Book your free discovery call today. No commitment, no pressure.</p>

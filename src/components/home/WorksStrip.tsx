@@ -30,7 +30,7 @@ export default function WorksStrip() {
 
   return (
     <section style={{ background:'#0d1b2a', padding:'7rem 0', overflow:'hidden' }}>
-      <div style={{ maxWidth:'1200px', margin:'0 auto', padding:'0 3rem', marginBottom:'3rem', display:'flex', justifyContent:'space-between', alignItems:'flex-end' }}>
+      <div style={{ maxWidth:'1200px', margin:'0 auto', padding:'0 3rem', marginBottom:'1.5rem', display:'flex', justifyContent:'space-between', alignItems:'flex-end' }}>
         <div>
           <p style={{ fontFamily:'Inter', fontSize:'0.75rem', letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--red)', marginBottom:'0.6rem', fontWeight:500 }}>Selected Projects</p>
           <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(2rem,4vw,3rem)', color:'white', letterSpacing:'-0.02em' }}>Our Work</h2>

@@ -136,7 +136,7 @@ function FlipCard({ s }: { s: typeof services[0] }) {
 
 export default function ServicesStrip() {
   return (
-    <section style={{ background:'#0d1b2a', padding:'7rem 3rem' }}>
+    <section style={{ background:'#0d1b2a', padding:'3.5rem 1.5rem' }}>
       <div style={{ maxWidth:'1200px', margin:'0 auto' }}>
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginBottom:'4rem', flexWrap:'wrap', gap:'1rem' }}>
           <div>
