@@ -36,6 +36,15 @@ export const metadata: Metadata = {
     images: ['https://nixrix.com/nixrix-og.png'],
   },
   alternates: { canonical: 'https://nixrix.com' },
+  icons: {
+    icon: [
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    shortcut: '/favicon-32.png',
+  },
   verification: { google: 'ADD_GOOGLE_VERIFICATION_CODE_HERE' },
 }
 
@@ -43,8 +52,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB">
       <head>
-        <link rel="icon" href="/nixrix-icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/nixrix-icon.svg" />
+        <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
         <meta name="geo.region" content="GB-LDS" />
         <meta name="geo.placename" content="Leeds, West Yorkshire" />
         <meta name="geo.position" content="53.7997;-1.5492" />
@@ -56,9 +67,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-title" content="NIXRIX" />
         <meta name="application-name" content="NIXRIX" />
         <meta name="msapplication-TileColor" content="#f90808" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/nixrix-icon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
