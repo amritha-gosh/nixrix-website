@@ -63,6 +63,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-4SGG04K1FF');
         ` }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SGG04K1FF"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4SGG04K1FF');
+        ` }} />
         <meta name="geo.region" content="GB-LDS" />
         <meta name="geo.placename" content="Leeds, West Yorkshire" />
         <meta name="geo.position" content="53.7997;-1.5492" />
