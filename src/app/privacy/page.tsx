@@ -60,8 +60,7 @@ export default function PrivacyPage() {
           color: activeSection === id ? '#f90808' : '#6b6256',
           fontWeight: activeSection === id ? 600 : 400,
           cursor:'pointer', transition:'all 0.15s',
-          fontFamily:'Inter,sans-serif', lineHeight:1.4, border:'none',
-          borderLeft: activeSection === id ? '2px solid #f90808' : '2px solid transparent',
+          fontFamily:'Inter,sans-serif', lineHeight:1.4,
         }}>
           {label}
         </button>
