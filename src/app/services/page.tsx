@@ -134,7 +134,7 @@ function PackageCard({ p }: { p: typeof pillars[0]['packages'][0] }) {
   return (
     <div onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}
       style={{
-        background: hovered ? '#1e1408' : '#fff',
+        background: hovered ? '#0a1628' : '#fff',
         border:`2px solid ${p.highlight ? 'var(--red)' : hovered ? 'var(--red)' : '#ede9e3'}`,
         borderRadius:'16px', overflow:'hidden',
         transform: hovered ? 'translateY(-4px)' : 'translateY(0)',
@@ -144,18 +144,18 @@ function PackageCard({ p }: { p: typeof pillars[0]['packages'][0] }) {
         position:'relative',
       }}>
       {p.highlight && <div style={{position:'absolute',top:'-14px',left:'50%',transform:'translateX(-50%)',background:'var(--red)',color:'white',padding:'0.2rem 1rem',fontFamily:'Inter,sans-serif',fontSize:'0.68rem',fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',whiteSpace:'nowrap',borderRadius:'50px',zIndex:1}}>Most Popular</div>}
-      <div style={{background: p.highlight ? 'var(--red)' : hovered ? '#2a1a0a' : '#fafaf8',padding:'0.8rem 1.5rem',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+      <div style={{background: p.highlight ? 'var(--red)' : hovered ? '#0a1628' : '#fafaf8',padding:'0.8rem 1.5rem',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
         <span style={{fontFamily:'Inter,sans-serif',fontSize:'0.68rem',fontWeight:700,color: p.highlight ? 'white' : hovered ? 'white' : 'var(--muted)',letterSpacing:'0.1em',textTransform:'uppercase'}}>{p.badge}</span>
         {p.price && <span style={{fontFamily:'Sora,sans-serif',fontSize:'0.8rem',fontWeight:700,color: p.highlight ? 'white' : 'var(--red)'}}>{p.price}</span>}
       </div>
       <div style={{padding:'1.8rem',flex:1,display:'flex',flexDirection:'column',gap:'0.8rem'}}>
         <div>
           <h3 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'1.15rem',color: hovered ? 'var(--red)' : 'var(--red)',marginBottom:'0.2rem'}}>{p.name}</h3>
-          <p style={{fontFamily:'Sora,sans-serif',fontSize:'0.88rem',fontWeight:700,color: hovered ? 'rgba(255,255,255,0.9)' : 'var(--dark)'}}>{p.tagline}</p>
+          <p style={{fontFamily:'Sora,sans-serif',fontSize:'0.88rem',fontWeight:700,color: hovered ? 'rgba(255,255,255,0.9)' : '#0d1b2a'}}>{p.tagline}</p>
         </div>
         <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.88rem',color: hovered ? '#bbb' : 'var(--muted)',lineHeight:1.75,fontWeight:300}}>{p.desc}</p>
         <div>
-          <button onClick={()=>setOpen(o=>!o)} style={{width:'100%',display:'flex',justifyContent:'space-between',alignItems:'center',padding:'0.7rem 1rem',background: hovered ? '#2a1a0a' : '#f7f5f2',border:`1px solid ${hovered ? '#3a2010' : '#ede9e3'}`,cursor:'pointer',fontFamily:'Inter,sans-serif',fontSize:'0.82rem',fontWeight:500,color: hovered ? '#aaa' : 'var(--dark)',transition:'all 0.2s',borderRadius:'8px'}}>
+          <button onClick={()=>setOpen(o=>!o)} style={{width:'100%',display:'flex',justifyContent:'space-between',alignItems:'center',padding:'0.7rem 1rem',background: hovered ? '#0a1628' : '#f7f5f2',border:`1px solid ${hovered ? '#0d2040' : '#ede9e3'}`,cursor:'pointer',fontFamily:'Inter,sans-serif',fontSize:'0.82rem',fontWeight:500,color: hovered ? '#aaa' : '#0d1b2a',transition:'all 0.2s',borderRadius:'8px'}}>
             {open ? 'Hide details' : 'Show details'}
             <span style={{transform: open ? 'rotate(180deg)' : 'rotate(0)',transition:'transform 0.3s',color:'var(--red)'}}>▾</span>
           </button>
@@ -175,9 +175,9 @@ function PackageCard({ p }: { p: typeof pillars[0]['packages'][0] }) {
           </div>
         </div>
         <a href="GOOGLE_FORM_DEMO_URL" target="_blank" rel="noopener noreferrer"
-          style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'0.4rem',padding:'0.85rem',background: p.highlight ? 'var(--red)' : 'transparent',color: p.highlight ? 'white' : hovered ? 'white' : 'var(--dark)',border:`2px solid ${p.highlight ? 'var(--red)' : hovered ? 'var(--red)' : '#ccc'}`,fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.85rem',transition:'all 0.2s',textAlign:'center',marginTop:'auto',borderRadius:'50px',cursor:'pointer'}}
+          style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'0.4rem',padding:'0.85rem',background: p.highlight ? 'var(--red)' : 'transparent',color: p.highlight ? 'white' : hovered ? 'white' : '#0d1b2a',border:`2px solid ${p.highlight ? 'var(--red)' : hovered ? 'var(--red)' : '#ccc'}`,fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.85rem',transition:'all 0.2s',textAlign:'center',marginTop:'auto',borderRadius:'50px',cursor:'pointer'}}
           onMouseEnter={e=>{(e.currentTarget as HTMLAnchorElement).style.background='var(--red)';(e.currentTarget as HTMLAnchorElement).style.color='white';(e.currentTarget as HTMLAnchorElement).style.borderColor='var(--red)'}}
-          onMouseLeave={e=>{if(!p.highlight){(e.currentTarget as HTMLAnchorElement).style.background='transparent';(e.currentTarget as HTMLAnchorElement).style.color=hovered?'white':'var(--dark)';(e.currentTarget as HTMLAnchorElement).style.borderColor=hovered?'var(--red)':'#ccc'}}}
+          onMouseLeave={e=>{if(!p.highlight){(e.currentTarget as HTMLAnchorElement).style.background='transparent';(e.currentTarget as HTMLAnchorElement).style.color=hovered?'white':'#0d1b2a';(e.currentTarget as HTMLAnchorElement).style.borderColor=hovered?'var(--red)':'#ccc'}}}
         >Enquire →</a>
       </div>
     </div>
@@ -194,11 +194,11 @@ export default function Services() {
   return (
     <>
       {/* Hero */}
-      <section style={{position:'relative',background:'#fff',paddingTop:'140px',paddingBottom:'80px',overflow:'hidden',minHeight:'440px'}}>
+      <section style={{position:'relative',background:'#f8fafd',paddingTop:'140px',paddingBottom:'80px',overflow:'hidden',minHeight:'440px'}}>
         <NodeCanvas height={440} />
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>What We Offer</p>
-          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'var(--dark)',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.2rem',animation:'fadeUp 0.7s ease both'}}>
+          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'#0d1b2a',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.2rem',animation:'fadeUp 0.7s ease both'}}>
             Services built for<br/><span style={{color:'var(--red)'}}>real business growth.</span>
           </h1>
           <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'1.05rem',color:'var(--muted)',maxWidth:'520px',lineHeight:1.85,animation:'fadeUp 0.7s 0.15s ease both'}}>
@@ -208,7 +208,7 @@ export default function Services() {
       </section>
 
       {/* Tabs */}
-      <div style={{background:'#fff',position:'sticky',top:'80px',zIndex:50,borderBottom:'2px solid #ede9e3'}}>
+      <div style={{background:'#f8fafd',position:'sticky',top:'80px',zIndex:50,borderBottom:'2px solid #ede9e3'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto',padding:'0 3rem',display:'flex',gap:0}}>
           {(['services','packages'] as const).map(t=>(
             <button key={t} onClick={()=>setTab(t)} style={{padding:'1.2rem 2rem',fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'0.9rem',background:'none',border:'none',cursor:'pointer',color: tab===t ? 'var(--red)' : 'var(--muted)',borderBottom: tab===t ? '2px solid var(--red)' : '2px solid transparent',marginBottom:'-2px',textTransform:'capitalize',transition:'all 0.2s'}}>
@@ -237,7 +237,7 @@ export default function Services() {
           <div style={{maxWidth:'1300px',margin:'0 auto'}}>
             <div style={{textAlign:'center',marginBottom:'3rem'}}>
               <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'0.6rem',fontWeight:500}}>Flexible Options</p>
-              <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'var(--dark)',letterSpacing:'-0.02em',marginBottom:'0.8rem'}}>Choose your package</h2>
+              <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'#0d1b2a',letterSpacing:'-0.02em',marginBottom:'0.8rem'}}>Choose your package</h2>
               <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'1rem',color:'var(--muted)',maxWidth:'480px',margin:'0 auto',lineHeight:1.8}}>All packages are tailored to your business. Pricing discussed on your free discovery call.</p>
             </div>
             <div style={{display:'flex',gap:'8px',flexWrap:'wrap',justifyContent:'center',marginBottom:'3rem'}}>
@@ -250,7 +250,7 @@ export default function Services() {
             <div id={`${activePillar}-packages`} style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',gap:'16px'}}>
               {currentPillar.packages.map((p,i)=><PackageCard key={`${activePillar}-${i}`} p={p}/>)}
             </div>
-            <div style={{marginTop:'4rem',background:'var(--dark)',padding:'3rem',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:'2rem',borderRadius:'16px'}}>
+            <div style={{marginTop:'4rem',background:'#0d1b2a',padding:'3rem',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:'2rem',borderRadius:'16px'}}>
               <div>
                 <h3 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.3rem',color:'white',marginBottom:'0.5rem'}}>Not sure which package fits?</h3>
                 <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,color:'rgba(255,255,255,0.75)',fontSize:'0.9rem'}}>Book a free 30-minute call and we will recommend the right solution for your business.</p>

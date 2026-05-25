@@ -118,7 +118,7 @@ export default function HeroSection() {
             <span style={{ width:'6px', height:'6px', borderRadius:'50%', background:'var(--red)', display:'inline-block', animation:'pulse 2s infinite' }}/>
             Digital Systems &amp; Automation Company
           </div>
-          <h1 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(2.2rem,7vw,5.2rem)', lineHeight:1.05, color:'var(--dark)', marginBottom:'1.2rem', letterSpacing:'-0.03em' }}>
+          <h1 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(2.2rem,7vw,5.2rem)', lineHeight:1.05, color:'#0d1b2a', marginBottom:'1.2rem', letterSpacing:'-0.03em' }}>
             Simplifying<br/>Digital.<br/><span style={{ color:'var(--red)' }}>Amplifying Growth.</span>
           </h1>
           <p style={{ fontFamily:'Inter,sans-serif', fontWeight:300, fontSize:'clamp(0.95rem,2.5vw,1.15rem)', color:'var(--muted)', marginBottom:'2rem', lineHeight:1.85, maxWidth:'500px' }}>
@@ -126,13 +126,13 @@ export default function HeroSection() {
           </p>
           <div style={{ display:'flex', gap:'1rem', flexWrap:'wrap' }}>
             <Link href="/contact" style={{ background:'var(--red)', color:'white', padding:'1rem 2rem', fontFamily:'Inter,sans-serif', fontWeight:600, fontSize:'0.9rem', display:'inline-flex', alignItems:'center', gap:'0.6rem', transition:'background 0.2s', borderRadius:'50px', boxShadow:'0 4px 20px rgba(249,8,8,0.3)', textDecoration:'none', minHeight:'52px', flex:'1 1 auto', justifyContent:'center' }}
-              onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.background='var(--dark)'}
+              onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.background='#0d1b2a'}
               onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.background='var(--red)'}>
               Start Your Project →
             </Link>
-            <Link href="/work" style={{ background:'transparent', color:'var(--dark)', padding:'1rem 2rem', fontFamily:'Inter,sans-serif', fontWeight:600, fontSize:'0.9rem', border:'2px solid var(--dark)', display:'inline-flex', alignItems:'center', gap:'0.6rem', transition:'all 0.2s', borderRadius:'50px', textDecoration:'none', minHeight:'52px', flex:'1 1 auto', justifyContent:'center' }}
-              onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background='var(--dark)'; (e.currentTarget as HTMLAnchorElement).style.color='white' }}
-              onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--dark)' }}>
+            <Link href="/work" style={{ background:'transparent', color:'#0d1b2a', padding:'1rem 2rem', fontFamily:'Inter,sans-serif', fontWeight:600, fontSize:'0.9rem', border:'2px solid #0d1b2a', display:'inline-flex', alignItems:'center', gap:'0.6rem', transition:'all 0.2s', borderRadius:'50px', textDecoration:'none', minHeight:'52px', flex:'1 1 auto', justifyContent:'center' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background='#0d1b2a'; (e.currentTarget as HTMLAnchorElement).style.color='white' }}
+              onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='#0d1b2a' }}>
               View Our Work
             </Link>
           </div>

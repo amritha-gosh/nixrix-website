@@ -86,7 +86,7 @@ export default function Work() {
         <NodeCanvas />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <p style={{ fontFamily: 'Inter', fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: '1rem', fontWeight: 500 }}>Selected Projects</p>
-          <h1 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(2.5rem,6vw,4.5rem)', color: 'var(--dark)', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '1.2rem' }}>
+          <h1 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(2.5rem,6vw,4.5rem)', color: '#0d1b2a', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '1.2rem' }}>
             Our <span style={{ color: 'var(--red)' }}>Work.</span>
           </h1>
           <p style={{ fontFamily: 'Inter,sans-serif', fontWeight: 300, fontSize: '1rem', color: 'var(--muted)', maxWidth: '500px', lineHeight: 1.85 }}>
@@ -174,7 +174,7 @@ export default function Work() {
       <section style={{ background: 'var(--cream)', padding: '4rem 1.5rem' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Inter', fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: '0.8rem', fontWeight: 500 }}>Project Details</p>
-          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,2.5rem)', color: 'var(--dark)', letterSpacing: '-0.02em', marginBottom: '2.5rem' }}>What we built</h2>
+          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,2.5rem)', color: '#0d1b2a', letterSpacing: '-0.02em', marginBottom: '2.5rem' }}>What we built</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {caseStudies.map((w, i) => (
               <div key={i} style={{ background: 'white', borderRadius: '16px', overflow: 'hidden', border: '2px solid #ede9e3', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
@@ -210,7 +210,7 @@ export default function Work() {
       {/* CTA */}
       <section style={{ background: '#fff', padding: '5rem 1.5rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,3rem)', color: 'var(--dark)', marginBottom: '1rem', letterSpacing: '-0.02em' }}>Ready to be next?</h2>
+          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,3rem)', color: '#0d1b2a', marginBottom: '1rem', letterSpacing: '-0.02em' }}>Ready to be next?</h2>
           <p style={{ fontFamily: 'Inter,sans-serif', color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.8 }}>Tell us about your project and we will get back to you within 24 hours.</p>
           <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: 'var(--red)', color: 'white', padding: '1rem 2.2rem', fontFamily: 'Inter,sans-serif', fontWeight: 600, fontSize: '0.9rem', borderRadius: '50px', boxShadow: '0 4px 20px rgba(249,8,8,0.3)', textDecoration: 'none', minHeight: '52px' }}>
             Start Your Project →

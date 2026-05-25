@@ -2,7 +2,7 @@ export default function Terms() {
   return (
     <section style={{background:'#fff',paddingTop:'140px',paddingBottom:'80px',paddingLeft:'3rem',paddingRight:'3rem'}}>
       <div style={{maxWidth:'800px',margin:'0 auto'}}>
-        <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'2.5rem',color:'var(--dark)',marginBottom:'2rem'}}>Terms of Service</h1>
+        <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'2.5rem',color:'#0d1b2a',marginBottom:'2rem'}}>Terms of Service</h1>
         <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',lineHeight:1.9,marginBottom:'1.5rem'}}>Last updated: May 2025</p>
         {[
           {h:'1. Services',p:'NIXRIX provides digital services including web design, automation, marketing, and software development. All services are subject to a signed proposal and agreement.'},
@@ -13,7 +13,7 @@ export default function Terms() {
           {h:'6. Governing law',p:'These terms are governed by the laws of England and Wales.'},
         ].map((s,i)=>(
           <div key={i} style={{marginBottom:'2rem'}}>
-            <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.1rem',color:'var(--dark)',marginBottom:'0.6rem'}}>{s.h}</h2>
+            <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.1rem',color:'#0d1b2a',marginBottom:'0.6rem'}}>{s.h}</h2>
             <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',lineHeight:1.85,fontWeight:300}}>{s.p}</p>
           </div>
         ))}

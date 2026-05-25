@@ -104,7 +104,7 @@ function FlipCard3D({ frontSub, frontWord, back }: { frontSub: string; frontWord
           <div style={{ position: 'absolute', bottom: '1rem', right: '1rem', width: '24px', height: '24px', borderBottom: '2px solid rgba(255,255,255,0.3)', borderRight: '2px solid rgba(255,255,255,0.3)' }} />
           <div style={{ textAlign: 'center', padding: '0 1rem' }}>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <span style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.8rem,6vw,2.8rem)', color: '#000000', letterSpacing: '-0.02em' }}>{frontSub}</span>
+              <span style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.8rem,6vw,2.8rem)', color: '#0d1b2a', letterSpacing: '-0.02em' }}>{frontSub}</span>
               <span style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.8rem,6vw,2.8rem)', color: 'white', letterSpacing: '-0.02em' }}>{frontWord}</span>
             </div>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.5rem' }}>
@@ -129,7 +129,7 @@ function FlipCard3D({ frontSub, frontWord, back }: { frontSub: string; frontWord
               <path d="M0 20V12.5C0 5.596 4.26 1.274 12.78 0l1.44 2.3C10.14 3.354 7.94 5.52 7.26 9H12V20H0zm16 0V12.5C16 5.596 20.26 1.274 28.78 0l1.44 2.3C26.14 3.354 23.94 5.52 23.26 9H28V20H16z" fill="#f90808" fillOpacity="0.7" />
             </svg>
           </div>
-          <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(0.82rem,2.5vw,1rem)', fontWeight: 300, color: 'var(--dark)', lineHeight: 1.85, position: 'relative', zIndex: 1 }}>
+          <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(0.82rem,2.5vw,1rem)', fontWeight: 300, color: '#0d1b2a', lineHeight: 1.85, position: 'relative', zIndex: 1 }}>
             &ldquo;{back}&rdquo;
           </p>
         </div>
@@ -168,7 +168,7 @@ function ValueCard({ num, icon, title, desc, delay }: { num: string; icon: React
         <span style={{ fontFamily: 'Sora,sans-serif', fontSize: '0.7rem', color: 'rgba(249,8,8,0.5)', fontWeight: 700, letterSpacing: '0.1em' }}>{num}</span>
         <div style={{ color: 'var(--red)' }}>{icon}</div>
       </div>
-      <h4 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 700, fontSize: '1rem', color: 'var(--dark)', marginBottom: '0.5rem' }}>{title}</h4>
+      <h4 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 700, fontSize: '1rem', color: '#0d1b2a', marginBottom: '0.5rem' }}>{title}</h4>
       <p style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.75, fontWeight: 300 }}>{desc}</p>
     </div>
   )
@@ -221,7 +221,7 @@ export default function About() {
         <SineCanvas />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <p style={{ fontFamily: 'Inter', fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: '1rem', fontWeight: 500 }}>Who We Are</p>
-          <h1 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(2.2rem,6vw,4.5rem)', color: 'var(--dark)', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '1.2rem' }}>
+          <h1 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(2.2rem,6vw,4.5rem)', color: '#0d1b2a', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '1.2rem' }}>
             Built to help businesses<br /><span style={{ color: 'var(--red)' }}>grow digitally.</span>
           </h1>
           <p style={{ fontFamily: 'Inter,sans-serif', fontWeight: 300, fontSize: '1rem', color: 'var(--muted)', maxWidth: '520px', lineHeight: 1.85 }}>
@@ -285,7 +285,7 @@ export default function About() {
       <section style={{ background: 'var(--cream)', padding: '4rem 1.5rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Inter', fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: '0.8rem', fontWeight: 500 }}>What Drives Us</p>
-          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,2.8rem)', color: 'var(--dark)', letterSpacing: '-0.02em', marginBottom: '2.5rem' }}>Our Values</h2>
+          <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,2.8rem)', color: '#0d1b2a', letterSpacing: '-0.02em', marginBottom: '2.5rem' }}>Our Values</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: '16px' }}>
             {values.map((v, i) => (
               <ValueCard key={i} num={`0${i + 1}`} icon={v.icon} title={v.title} desc={v.desc} delay={i * 100} />
@@ -295,7 +295,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: 'var(--dark)', padding: '5rem 1.5rem', textAlign: 'center' }}>
+      <section style={{ background: '#0d1b2a', padding: '5rem 1.5rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem,4vw,3rem)', color: 'white', marginBottom: '1rem', letterSpacing: '-0.02em' }}>
             Let&apos;s build something<br /><span style={{ color: 'var(--red)' }}>remarkable.</span>

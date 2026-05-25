@@ -15,7 +15,7 @@ export default function AboutStrip() {
       <div style={{ maxWidth:'1200px', margin:'0 auto', display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:'3rem', alignItems:'center' }}>
         <div>
           <p style={{ fontFamily:'Inter', fontSize:'0.75rem', letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--red)', marginBottom:'0.8rem', fontWeight:500 }}>Who We Are</p>
-          <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(1.6rem,4vw,2.8rem)', color:'var(--dark)', letterSpacing:'-0.02em', marginBottom:'1.2rem', lineHeight:1.15 }}>
+          <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'clamp(1.6rem,4vw,2.8rem)', color:'#0d1b2a', letterSpacing:'-0.02em', marginBottom:'1.2rem', lineHeight:1.15 }}>
             A digital systems company built for ambitious businesses
           </h2>
           <p style={{ fontFamily:'Inter,sans-serif', fontWeight:300, fontSize:'1rem', color:'var(--muted)', lineHeight:1.9, marginBottom:'1.8rem' }}>
@@ -39,7 +39,7 @@ export default function AboutStrip() {
                 boxShadow: hovered===i ? '0 16px 40px rgba(249,8,8,0.15)' : '0 2px 12px rgba(0,0,0,0.04)',
                 gridColumn: i===2 ? 'span 2' : 'span 1',
               }}>
-              <h4 style={{ fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'0.95rem', color: hovered===i ? 'white' : 'var(--dark)', marginBottom:'0.5rem', transition:'color 0.3s' }}>{c.title}</h4>
+              <h4 style={{ fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'0.95rem', color: hovered===i ? 'white' : '#0d1b2a', marginBottom:'0.5rem', transition:'color 0.3s' }}>{c.title}</h4>
               <p style={{ fontFamily:'Inter,sans-serif', fontSize:'0.82rem', color: hovered===i ? 'rgba(255,255,255,0.8)' : 'var(--muted)', lineHeight:1.65, transition:'color 0.3s' }}>{c.desc}</p>
             </div>
           ))}

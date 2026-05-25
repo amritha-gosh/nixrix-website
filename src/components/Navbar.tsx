@@ -53,7 +53,7 @@ export default function Navbar() {
         {!isMobile && (
           <div style={{
             pointerEvents:'all', display:'flex', alignItems:'center',
-            background:'rgba(61,43,31,0.92)', backdropFilter:'blur(16px)',
+            background:'rgba(13,27,42,0.95)', backdropFilter:'blur(16px)',
             borderRadius:'50px', padding:'0.4rem 0.5rem', gap:'0.05rem',
             position:'absolute', left:'50%', transform:'translateX(-50%)',
             boxShadow:'0 4px 24px rgba(0,0,0,0.2)',
@@ -78,7 +78,7 @@ export default function Navbar() {
                   {l.label}{l.sub && <span style={{fontSize:'0.6rem',opacity:0.5}}>▾</span>}
                 </Link>
                 {l.sub && openSub===l.href && (
-                  <div style={{ position:'absolute', top:'110%', left:'50%', transform:'translateX(-50%)', background:'rgba(61,43,31,0.97)', backdropFilter:'blur(16px)', borderRadius:'14px', padding:'0.5rem', minWidth:'180px', boxShadow:'0 20px 50px rgba(0,0,0,0.3)', border:'1px solid rgba(255,255,255,0.08)', zIndex:100 }}>
+                  <div style={{ position:'absolute', top:'110%', left:'50%', transform:'translateX(-50%)', background:'rgba(13,27,42,0.97)', backdropFilter:'blur(16px)', borderRadius:'14px', padding:'0.5rem', minWidth:'180px', boxShadow:'0 20px 50px rgba(0,0,0,0.3)', border:'1px solid rgba(255,255,255,0.08)', zIndex:100 }}>
                     {l.sub.map(s => (
                       <Link key={s.href} href={s.href} style={{ display:'block', padding:'0.6rem 1rem', fontFamily:'Inter,sans-serif', fontSize:'14px', color:'rgba(255,255,255,0.8)', borderRadius:'10px', transition:'all 0.15s', whiteSpace:'nowrap', fontWeight:500 }}
                         onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background='rgba(249,8,8,0.2)'; (e.currentTarget as HTMLAnchorElement).style.color='white' }}
@@ -114,7 +114,7 @@ export default function Navbar() {
           {isMobile && (
             <button onClick={() => setMenuOpen(o => !o)}
               style={{
-                background: menuOpen ? 'var(--dark)' : 'rgba(61,43,31,0.92)',
+                background: menuOpen ? '#0d1b2a' : 'rgba(13,27,42,0.95)',
                 border:'none', borderRadius:'12px', padding:'0.6rem',
                 display:'flex', flexDirection:'column', gap:'5px',
                 cursor:'pointer', width:'44px', height:'44px',

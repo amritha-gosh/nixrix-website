@@ -8,7 +8,7 @@ export default function CookieBanner() {
   const decline = () => { localStorage.setItem('nixrix-cookies','declined'); setShow(false) }
   if (!show) return null
   return (
-    <div style={{ position:'fixed', bottom:'1.5rem', left:'50%', transform:'translateX(-50%)', zIndex:9997, background:'var(--dark)', border:'1px solid #2a2010', padding:'1.2rem 1.8rem', display:'flex', alignItems:'center', gap:'1.5rem', flexWrap:'wrap', maxWidth:'680px', width:'calc(100% - 3rem)', boxShadow:'0 20px 60px rgba(0,0,0,0.4)', borderRadius:'12px' }}>
+    <div style={{ position:'fixed', bottom:'1.5rem', left:'50%', transform:'translateX(-50%)', zIndex:9997, background:'#0d1b2a', border:'1px solid #2a2010', padding:'1.2rem 1.8rem', display:'flex', alignItems:'center', gap:'1.5rem', flexWrap:'wrap', maxWidth:'680px', width:'calc(100% - 3rem)', boxShadow:'0 20px 60px rgba(0,0,0,0.4)', borderRadius:'12px' }}>
       <p style={{ fontFamily:'Inter,sans-serif', fontSize:'0.82rem', color:'#aaa', lineHeight:1.6, flex:1, margin:0 }}>
         We use cookies to improve your experience. Read our <Link href="/cookies" style={{ color:'var(--red)' }}>Cookie Policy</Link>.
       </p>

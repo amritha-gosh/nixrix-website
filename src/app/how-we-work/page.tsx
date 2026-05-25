@@ -184,7 +184,7 @@ function WheelCard({ step }: { step: typeof steps[0] }) {
           <h3 style={{
             fontFamily:'Sora,sans-serif', fontWeight:800,
             fontSize:'clamp(1.25rem,2.5vw,1.6rem)',
-            color:'white', marginBottom:'0.6rem',
+            color:'#0d1b2a', marginBottom:'0.6rem',
             letterSpacing:'-0.01em',
           }}>{step.title}</h3>
           <p style={{
@@ -239,7 +239,7 @@ export default function HowWeWork() {
         <SineCanvas/>
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>Our Process</p>
-          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'var(--dark)',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.5rem'}}>
+          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'#0d1b2a',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.5rem'}}>
             Simple process.<br/><span style={{color:'var(--red)'}}>Exceptional results.</span>
           </h1>
           <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'1.05rem',color:'var(--muted)',maxWidth:'500px',lineHeight:1.85}}>
@@ -259,7 +259,7 @@ export default function HowWeWork() {
 
       <section style={{background:'#fff',padding:'4rem 3rem 7rem',textAlign:'center',borderTop:'1px solid #ede9e3'}}>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
-          <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'var(--dark)',marginBottom:'1rem',letterSpacing:'-0.02em'}}>Ready to get started?</h2>
+          <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'#0d1b2a',marginBottom:'1rem',letterSpacing:'-0.02em'}}>Ready to get started?</h2>
           <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',fontSize:'1rem',marginBottom:'2rem',lineHeight:1.8}}>Book your free discovery call today. No commitment, no pressure.</p>
           <Link href="/contact" style={{display:'inline-flex',alignItems:'center',gap:'0.6rem',background:'var(--red)',color:'white',padding:'1rem 2.2rem',fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.9rem',borderRadius:'50px',boxShadow:'0 4px 20px rgba(249,8,8,0.3)'}}>
             Book Free Call →

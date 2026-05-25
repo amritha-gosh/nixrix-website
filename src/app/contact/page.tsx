@@ -59,7 +59,7 @@ export default function Contact() {
     width:'100%', padding:'0.9rem 1rem',
     fontFamily:'Inter,sans-serif', fontSize:'0.9rem',
     border:'1.5px solid #e0ddd8', background:'#fff',
-    color:'var(--dark)', outline:'none', borderRadius:'0',
+    color:'#0d1b2a', outline:'none', borderRadius:'0',
     transition:'border-color 0.2s',
   }
 
@@ -77,7 +77,7 @@ export default function Contact() {
         <div style={{maxWidth:'1300px',margin:'0 auto',width:'100%',display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',minHeight:'calc(100vh - 80px)'}}>
 
           {/* ── LEFT SIDE ── */}
-          <div style={{background:'var(--dark)',padding:'5rem 4rem',display:'flex',flexDirection:'column',justifyContent:'center',position:'relative',overflow:'hidden'}}>
+          <div style={{background:'#0d1b2a',padding:'5rem 4rem',display:'flex',flexDirection:'column',justifyContent:'center',position:'relative',overflow:'hidden'}}>
             {/* Red accent line */}
             <div style={{position:'absolute',left:0,top:0,bottom:0,width:'4px',background:'var(--red)'}}/>
             {/* Subtle glow */}
@@ -153,7 +153,7 @@ export default function Contact() {
             {sent ? (
               <div style={{textAlign:'center',padding:'3rem 0'}}>
                 <div style={{width:'72px',height:'72px',background:'var(--red)',borderRadius:'50%',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 2rem',fontSize:'2rem',color:'white'}}>✓</div>
-                <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'2rem',color:'var(--dark)',marginBottom:'1rem'}}>Message sent!</h2>
+                <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'2rem',color:'#0d1b2a',marginBottom:'1rem'}}>Message sent!</h2>
                 <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',fontSize:'1rem',lineHeight:1.8}}>
                   Thanks for reaching out. We will get back to you within 24 hours — usually much sooner.
                 </p>
@@ -161,7 +161,7 @@ export default function Contact() {
             ) : (
               <>
                 <div style={{marginBottom:'2.5rem'}}>
-                  <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.6rem,3vw,2.2rem)',color:'var(--dark)',letterSpacing:'-0.02em',marginBottom:'0.6rem'}}>
+                  <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.6rem,3vw,2.2rem)',color:'#0d1b2a',letterSpacing:'-0.02em',marginBottom:'0.6rem'}}>
                     Start the conversation.
                   </h2>
                   <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.88rem',color:'var(--muted)',fontWeight:300}}>
@@ -172,15 +172,15 @@ export default function Contact() {
                 <form onSubmit={submit} style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
                   <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',gap:'1rem'}}>
                     <div>
-                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Your Name <span style={{color:'var(--red)'}}>*</span></label>
+                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Your Name <span style={{color:'var(--red)'}}>*</span></label>
                       <input required name="name" placeholder="Jane Smith" value={form.name} onChange={handle}
                         style={inputStyle}
                         onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
                         onBlur={e=>e.currentTarget.style.borderColor='#e0ddd8'}/>
                     </div>
                     <div>
-                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Business Name <span style={{color:'var(--red)'}}>*</span></label>
-                      <input required name="business" placeholder="Acme Ltd" value={form.business} onChange={handle}
+                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Business Name <span style={{color:'var(--red)'}}>*</span></label>
+                      <input name="business" placeholder="Acme Ltd" value={form.business} onChange={handle}
                         style={inputStyle}
                         onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
                         onBlur={e=>e.currentTarget.style.borderColor='#e0ddd8'}/>
@@ -188,7 +188,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Email Address <span style={{color:'var(--red)'}}>*</span></label>
+                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Email Address <span style={{color:'var(--red)'}}>*</span></label>
                     <input required name="email" type="email" placeholder="jane@acme.com" value={form.email} onChange={handle}
                       style={inputStyle}
                       onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
@@ -196,7 +196,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Phone Number <span style={{color:'#ccc',fontWeight:400,textTransform:'none',letterSpacing:0}}>— optional</span></label>
+                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Phone Number <span style={{color:'#ccc',fontWeight:400,textTransform:'none',letterSpacing:0}}>— optional</span></label>
                     <input name="phone" placeholder="+44 7000 000000" value={form.phone} onChange={handle}
                       style={inputStyle}
                       onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
@@ -204,9 +204,9 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>How can we help you? <span style={{color:'var(--red)'}}>*</span></label>
+                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>How can we help you? <span style={{color:'var(--red)'}}>*</span></label>
                     <select required name="service" value={form.service} onChange={handle}
-                      style={{...inputStyle,color:form.service?'var(--dark)':'#aaa',appearance:'none',backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23f90808' d='M6 8L1 3h10z'/%3E%3C/svg%3E")`,backgroundRepeat:'no-repeat',backgroundPosition:'right 1rem center',paddingRight:'2.5rem'}}
+                      style={{...inputStyle,color:form.service?'#0d1b2a':'#aaa',appearance:'none',backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23f90808' d='M6 8L1 3h10z'/%3E%3C/svg%3E")`,backgroundRepeat:'no-repeat',backgroundPosition:'right 1rem center',paddingRight:'2.5rem'}}
                       onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
                       onBlur={e=>e.currentTarget.style.borderColor='#e0ddd8'}>
                       <option value="">Select a service...</option>
@@ -236,7 +236,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'var(--dark)',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Tell us about your business <span style={{color:'#ccc',fontWeight:400,textTransform:'none',letterSpacing:0}}>— optional</span></label>
+                    <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Tell us about your business <span style={{color:'#ccc',fontWeight:400,textTransform:'none',letterSpacing:0}}>— optional</span></label>
                     <textarea name="message" placeholder="What's the biggest challenge you're facing right now?" value={form.message} onChange={handle} rows={4}
                       style={{...inputStyle,resize:'vertical'}}
                       onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
@@ -247,7 +247,7 @@ export default function Contact() {
 
                   <button type="submit" disabled={loading}
                     style={{width:'100%',padding:'1.1rem',background:'var(--red)',color:'white',border:'none',fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.95rem',letterSpacing:'0.04em',opacity:loading?0.7:1,transition:'all 0.2s',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',gap:'0.6rem'}}
-                    onMouseEnter={e=>{if(!loading)(e.currentTarget as HTMLButtonElement).style.background='var(--dark)'}}
+                    onMouseEnter={e=>{if(!loading)(e.currentTarget as HTMLButtonElement).style.background='#0d1b2a'}}
                     onMouseLeave={e=>(e.currentTarget as HTMLButtonElement).style.background='var(--red)'}>
                     {loading ? 'Sending...' : <>Send Message <span style={{fontSize:'1.1rem'}}>→</span></>}
                   </button>

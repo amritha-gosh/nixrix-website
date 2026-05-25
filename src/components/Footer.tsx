@@ -11,7 +11,7 @@ export default function Footer() {
             <div style={{ marginBottom: '1rem' }}>
               <img src="/nixrix-logo.svg" alt="NIXRIX" style={{ height: '40px', width: 'auto' }} />
             </div>
-            <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.82rem', lineHeight: 1.7, fontFamily: 'Inter,sans-serif', fontWeight: 300, marginBottom: '1rem' }}>
+            <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.82rem', lineHeight: 1.7, fontFamily: 'Inter,sans-serif', fontWeight: 300, marginBottom: '1rem' }}>
               Simplifying Digital.<br />Amplifying Growth.
             </p>
             <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -20,7 +20,7 @@ export default function Footer() {
                 { href: 'https://instagram.com/nixrix_', icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg> },
               ].map((s, i) => (
                 <a key={i} href={s.href} target="_blank" rel="noopener noreferrer"
-                  style={{ width: '34px', height: '34px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.4)', transition: 'all 0.2s', minHeight: '44px', minWidth: '44px' }}
+                  style={{ width: '34px', height: '34px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.7)', transition: 'all 0.2s', minHeight: '44px', minWidth: '44px' }}
                   onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'var(--red)'; (e.currentTarget as HTMLAnchorElement).style.color = 'var(--red)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.4)' }}>
                   {s.icon}
@@ -41,7 +41,7 @@ export default function Footer() {
               { label: 'Contact', href: '/contact' },
             ].map(p => (
               <div key={p.label} style={{ marginBottom: '0.4rem' }}>
-                <Link href={p.href} style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', fontFamily: 'Inter,sans-serif', transition: 'color 0.2s', textDecoration: 'none', display: 'inline-block', minHeight: '36px', lineHeight: '36px' }}
+                <Link href={p.href} style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', fontFamily: 'Inter,sans-serif', transition: 'color 0.2s', textDecoration: 'none', display: 'inline-block', minHeight: '36px', lineHeight: '36px' }}
                   onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = 'var(--red)'}
                   onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.5)'}>
                   {p.label}
@@ -59,7 +59,7 @@ export default function Footer() {
                 { label: 'Location', value: 'Leeds, UK', href: null },
               ].map((c, i) => (
                 <div key={i}>
-                  <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500, marginBottom: '0.15rem' }}>{c.label}</div>
+                  <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.65rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500, marginBottom: '0.15rem' }}>{c.label}</div>
                   {c.href
                     ? <a href={c.href} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontFamily: 'Inter,sans-serif', transition: 'color 0.2s', textDecoration: 'none' }}
                       onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = 'var(--red)'}
@@ -76,10 +76,10 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '1.2rem 0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.8rem' }}>
-          <p style={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.72rem', fontFamily: 'Inter,sans-serif' }}>© 2025–2026 NIXRIX. All rights reserved.</p>
+          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.72rem', fontFamily: 'Inter,sans-serif' }}>© 2025–2026 NIXRIX. All rights reserved.</p>
           <div style={{ display: 'flex', gap: '1.2rem', flexWrap: 'wrap' }}>
             {[{ label: 'Privacy', href: '/privacy' }, { label: 'Cookies', href: '/cookies' }, { label: 'Terms', href: '/terms' }].map(l => (
-              <Link key={l.label} href={l.href} style={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.72rem', fontFamily: 'Inter,sans-serif', transition: 'color 0.2s', textDecoration: 'none' }}
+              <Link key={l.label} href={l.href} style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.72rem', fontFamily: 'Inter,sans-serif', transition: 'color 0.2s', textDecoration: 'none' }}
                 onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = 'var(--red)'}
                 onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.2)'}>
                 {l.label}
