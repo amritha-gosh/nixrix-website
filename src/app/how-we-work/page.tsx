@@ -235,7 +235,7 @@ function SineCanvas() {
 export default function HowWeWork() {
   return (
     <>
-      <section style={{position:'relative',background:'#fff',paddingTop:'96px',paddingBottom:'80px',overflow:'hidden',minHeight:'360px'}}>
+      <section style={{position:'relative',background:'#fff',paddingTop:'96px',paddingBottom:'40px',overflow:'hidden',minHeight:'280px'}}>
         <SineCanvas/>
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>Our Process</p>
@@ -248,7 +248,7 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section style={{background:'#fafaf8',padding:'2.5rem 1.5rem 3.5rem'}}>
+      <section style={{background:'#fafaf8',padding:'2rem 1.5rem 2.5rem'}}>
         <div style={{maxWidth:'860px',margin:'0 auto'}}>
           <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.8rem',color:'var(--muted)',letterSpacing:'0.08em',textTransform:'uppercase',fontWeight:500,marginBottom:'1.5rem',textAlign:'center'}}>
             Scroll to explore each step ↓
@@ -257,10 +257,10 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section style={{background:'#fff',padding:'2.5rem 1.5rem 3.5rem',textAlign:'center',borderTop:'1px solid #ede9e3'}}>
+      <section style={{background:'#fff',padding:'2rem 1.5rem 2.5rem',textAlign:'center',borderTop:'1px solid #ede9e3'}}>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
           <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(1.8rem,4vw,3rem)',color:'#0d1b2a',marginBottom:'1rem',letterSpacing:'-0.02em'}}>Ready to get started?</h2>
-          <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',fontSize:'1rem',marginBottom:'2rem',lineHeight:1.8}}>Book your free discovery call today. No commitment, no pressure.</p>
+          <p style={{fontFamily:'Inter,sans-serif',color:'var(--muted)',fontSize:'1rem',marginBottom:'1rem',lineHeight:1.8}}>Book your free discovery call today. No commitment, no pressure.</p>
           <Link href="/contact" style={{display:'inline-flex',alignItems:'center',gap:'0.6rem',background:'var(--red)',color:'white',padding:'1rem 2.2rem',fontFamily:'Inter,sans-serif',fontWeight:600,fontSize:'0.9rem',borderRadius:'50px',boxShadow:'0 4px 20px rgba(249,8,8,0.3)'}}>
             Book Free Call →
           </Link>

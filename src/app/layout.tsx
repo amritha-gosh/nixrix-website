@@ -43,6 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB">
       <head>
+        <link rel="icon" href="/nixrix-icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/nixrix-icon.svg" />
         <meta name="geo.region" content="GB-LDS" />
         <meta name="geo.placename" content="Leeds, West Yorkshire" />
         <meta name="geo.position" content="53.7997;-1.5492" />

@@ -18,7 +18,7 @@ export default function Blog() {
   const filtered = activeTag === 'All' ? posts : posts.filter(p => p.tag === activeTag)
   return (
     <>
-      <section style={{background:'#fff',paddingTop:'96px',paddingBottom:'60px',paddingLeft:'3rem',paddingRight:'3rem',position:'relative',overflow:'hidden'}}>
+      <section style={{background:'#fff',paddingTop:'96px',paddingBottom:'30px',paddingLeft:'3rem',paddingRight:'3rem',position:'relative',overflow:'hidden'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>Insights</p>
           <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'#0d1b2a',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.5rem'}}>
@@ -40,7 +40,7 @@ export default function Blog() {
         </div>
       </div>
 
-      <section style={{background:'var(--cream)',padding:'2.5rem 1.5rem 3.5rem'}}>
+      <section style={{background:'var(--cream)',padding:'2rem 1.5rem 2.5rem'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto'}}>
           <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(340px,1fr))',gap:'20px'}}>
             {filtered.map((p,i)=>(

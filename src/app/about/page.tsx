@@ -263,16 +263,16 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section style={{ background: 'var(--red)', padding: '3rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: 'var(--red)', padding: '1.2rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg,transparent 35%,rgba(255,255,255,0.06) 50%,transparent 65%)', backgroundSize: '200% 100%', animation: 'shimmer 4s linear infinite', pointerEvents: 'none' }} />
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1rem', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1rem', position: 'relative', zIndex: 1 }}>
           {[
             { n: '20+', l: 'Projects Delivered', s: 'and growing' },
             { n: '92%', l: 'Client Satisfaction', s: 'across all projects' },
             { n: '24h', l: 'Response Guarantee', s: 'no chasing required' },
             { n: '100%', l: 'Tailored Solutions', s: 'every solution built around your business' },
           ].map((s, i) => (
-            <div key={i} style={{ textAlign: 'center', padding: '1.5rem 0.5rem' }}>
+            <div key={i} style={{ textAlign: 'center', padding: '0.8rem 0.5rem' }}>
               <div style={{ fontFamily: 'Sora,sans-serif', fontWeight: 800, fontSize: 'clamp(2rem,6vw,3rem)', color: 'white', letterSpacing: '-0.03em' }}>{s.n}</div>
               <div style={{ fontFamily: 'Sora,sans-serif', fontSize: 'clamp(0.8rem,2.5vw,0.95rem)', color: 'white', fontWeight: 600, marginTop: '0.4rem' }}>{s.l}</div>
               <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(0.7rem,2vw,0.8rem)', color: 'rgba(255,255,255,0.75)', marginTop: '0.2rem' }}>{s.s}</div>

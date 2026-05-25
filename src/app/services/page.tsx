@@ -194,7 +194,7 @@ export default function Services() {
   return (
     <>
       {/* Hero */}
-      <section style={{position:'relative',background:'#f8fafd',paddingTop:'96px',paddingBottom:'80px',overflow:'hidden',minHeight:'440px'}}>
+      <section style={{position:'relative',background:'#f8fafd',paddingTop:'96px',paddingBottom:'40px',overflow:'hidden',minHeight:'300px'}}>
         <NodeCanvas height={440} />
         <div style={{position:'relative',zIndex:1,maxWidth:'1200px',margin:'0 auto',padding:'0 3rem'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>What We Offer</p>
@@ -233,7 +233,7 @@ export default function Services() {
 
       {/* Packages tab */}
       {tab==='packages' && (
-        <section style={{background:'#fafaf8',padding:'2.5rem 1.5rem 3.5rem'}}>
+        <section style={{background:'#fafaf8',padding:'2rem 1.5rem 2.5rem'}}>
           <div style={{maxWidth:'1300px',margin:'0 auto'}}>
             <div style={{textAlign:'center',marginBottom:'1.5rem'}}>
               <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'0.6rem',fontWeight:500}}>Flexible Options</p>
