@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
     shortcut: '/favicon-32.png',
   },
-  verification: { google: 'ADD_GOOGLE_VERIFICATION_CODE_HERE' },
+  
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -56,6 +56,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SGG04K1FF"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4SGG04K1FF');
+        ` }} />
         <meta name="geo.region" content="GB-LDS" />
         <meta name="geo.placename" content="Leeds, West Yorkshire" />
         <meta name="geo.position" content="53.7997;-1.5492" />
