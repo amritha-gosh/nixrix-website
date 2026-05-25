@@ -133,7 +133,7 @@ export default function Navbar() {
       {isMobile && (
         <div style={{
           position:'fixed', inset:0, zIndex:999,
-          background:'#3D2B1F',
+          background:'#0d1b2a',
           transform: menuOpen ? 'translateX(0)' : 'translateX(100%)',
           transition:'transform 0.35s cubic-bezier(0.4,0,0.2,1)',
           display:'flex', flexDirection:'column',

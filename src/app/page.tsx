@@ -4,6 +4,7 @@ import ServicesStrip from '@/components/home/ServicesStrip'
 import StatsStrip from '@/components/home/StatsStrip'
 import AboutStrip from '@/components/home/AboutStrip'
 import WorksStrip from '@/components/home/WorksStrip'
+import ReviewsStrip from '@/components/ReviewsStrip'
 import CTASection from '@/components/home/CTASection'
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function Home() {
       <StatsStrip />
       <AboutStrip />
       <WorksStrip />
+      <ReviewsStrip />
       <CTASection />
     </>
   )

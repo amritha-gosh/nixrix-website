@@ -21,7 +21,7 @@ export default function Blog() {
       <section style={{background:'#fff',paddingTop:'140px',paddingBottom:'60px',paddingLeft:'3rem',paddingRight:'3rem',position:'relative',overflow:'hidden'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto'}}>
           <p style={{fontFamily:'Inter',fontSize:'0.75rem',letterSpacing:'0.14em',textTransform:'uppercase',color:'var(--red)',marginBottom:'1rem',fontWeight:500}}>Insights</p>
-          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'var(--dark)',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.5rem'}}>
+          <h1 style={{fontFamily:'Sora,sans-serif',fontWeight:800,fontSize:'clamp(2.5rem,5vw,4.5rem)',color:'#0d1b2a',letterSpacing:'-0.03em',lineHeight:1.05,marginBottom:'1.5rem'}}>
             Digital insights for<br/><span style={{color:'var(--red)'}}>growing businesses.</span>
           </h1>
           <p style={{fontFamily:'Inter,sans-serif',fontWeight:300,fontSize:'1.05rem',color:'var(--muted)',maxWidth:'480px',lineHeight:1.85}}>
@@ -52,7 +52,7 @@ export default function Blog() {
                     <span style={{fontFamily:'Inter,sans-serif',fontSize:'0.68rem',fontWeight:700,color:'white',letterSpacing:'0.12em',textTransform:'uppercase'}}>{p.tag}</span>
                   </div>
                   <div style={{padding:'2rem',flex:1,display:'flex',flexDirection:'column',gap:'0.8rem'}}>
-                    <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.1rem',color:'var(--dark)',lineHeight:1.35}}>{p.title}</h2>
+                    <h2 style={{fontFamily:'Sora,sans-serif',fontWeight:700,fontSize:'1.1rem',color:'#0d1b2a',lineHeight:1.35}}>{p.title}</h2>
                     <p style={{fontFamily:'Inter,sans-serif',fontSize:'0.88rem',color:'var(--muted)',lineHeight:1.75,fontWeight:300,flex:1}}>{p.excerpt}</p>
                     <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',paddingTop:'1rem',borderTop:'1px solid #ede9e3'}}>
                       <div style={{display:'flex',gap:'0.8rem',fontFamily:'Inter,sans-serif',fontSize:'0.75rem',color:'var(--muted)'}}>

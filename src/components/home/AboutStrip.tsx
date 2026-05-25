@@ -31,7 +31,7 @@ export default function AboutStrip() {
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
               style={{
-                background: hovered===i ? '#3D2B1F' : '#ffffff',
+                background: hovered===i ? '#0d1b2a' : '#ffffff',
                 padding:'1.5rem', borderRadius:'14px',
                 border:`2px solid ${hovered===i ? 'var(--red)' : '#ede9e3'}`,
                 transform: hovered===i ? 'translateY(-6px)' : 'translateY(0)',

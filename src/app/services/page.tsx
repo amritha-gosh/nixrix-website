@@ -220,7 +220,7 @@ export default function Services() {
 
       {/* Services tab */}
       {tab==='services' && (
-        <section style={{background:'#3D2B1F',padding:'5rem 3rem 7rem',position:'relative',overflow:'hidden'}}>
+        <section style={{background:'#0d1b2a',padding:'5rem 3rem 7rem',position:'relative',overflow:'hidden'}}>
           <NodeCanvas height={800} />
           <div style={{maxWidth:'1200px',margin:'0 auto',position:'relative',zIndex:1}}>
             <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(270px,1fr))',gap:'20px'}}>

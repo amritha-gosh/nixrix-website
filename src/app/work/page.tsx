@@ -96,7 +96,7 @@ export default function Work() {
       </section>
 
       {/* Portfolio strip */}
-      <section style={{ background: '#3D2B1F', padding: '4rem 0', overflow: 'hidden' }}>
+      <section style={{ background: '#0d1b2a', padding: '4rem 0', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div>
             <p style={{ fontFamily: 'Inter', fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: '0.5rem', fontWeight: 500 }}>Portfolio</p>
@@ -178,7 +178,7 @@ export default function Work() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {caseStudies.map((w, i) => (
               <div key={i} style={{ background: 'white', borderRadius: '16px', overflow: 'hidden', border: '2px solid #ede9e3', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
-                <div style={{ background: '#3D2B1F', padding: '1.5rem 2rem' }}>
+                <div style={{ background: '#0d1b2a', padding: '1.5rem 2rem' }}>
                   <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.6rem' }}>
                     {w.tags.map((tag, j) => (
                       <span key={j} style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.62rem', fontWeight: 600, color: 'var(--red)', letterSpacing: '0.1em', textTransform: 'uppercase', background: 'rgba(249,8,8,0.15)', padding: '0.15rem 0.6rem', borderRadius: '50px' }}>{tag}</span>
