@@ -179,7 +179,7 @@ export default function Contact() {
                         onBlur={e=>e.currentTarget.style.borderColor='#e0ddd8'}/>
                     </div>
                     <div>
-                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Business Name <span style={{color:'var(--red)'}}>*</span></label>
+                      <label style={{fontFamily:'Inter,sans-serif',fontSize:'0.75rem',fontWeight:600,color:'#0d1b2a',letterSpacing:'0.06em',textTransform:'uppercase',display:'block',marginBottom:'0.4rem'}}>Business Name <span style={{ color:'#aaa', fontWeight:400, textTransform:'none', letterSpacing:0, fontSize:'0.68rem' }}>— optional</span></label>
                       <input name="business" placeholder="Acme Ltd" value={form.business} onChange={handle}
                         style={inputStyle}
                         onFocus={e=>e.currentTarget.style.borderColor='var(--red)'}
